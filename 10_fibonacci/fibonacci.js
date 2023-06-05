@@ -1,4 +1,22 @@
-const fibonacci = function() {
+const fibonacci = function(count) {
+    if (count < 0) {
+        return "OOPS"
+    };
+
+    if (count === 0) {
+        return 0;
+    }
+
+    a = 0;
+    b = 1;
+
+    for (let i = 1; i < count; i++) {
+        const temp = b;
+        b = a + b;
+        a = temp;
+    }
+
+    return b;
 
 };
 

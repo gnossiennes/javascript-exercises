@@ -1,0 +1,40 @@
+<script>
+    const arrayRangeOfNumbers = (a, b) => {
+        let array = [];
+        for (a; a <= b; b++) {
+            array.push(a)
+        }
+        return array
+    }
+
+
+const sumAll = function(start, stop) {
+
+
+// make array of numbers
+const arrayRangeOfNumbers = (a, b) => {
+    let array = [];
+    for (a; a <= b; b++) {
+        array.push(a)
+    }
+    return array
+}
+
+const a = start;
+const b = stop;
+
+
+// sum all numbers
+const arraySum = arrayRangeOfNumbers.reduce((currentTotal, element) => {
+    return element + currentTotal
+}, 0)
+
+return arraySum
+};
+
+// Do not edit below this line
+/* module.exports = sumAll; */
+
+
+
+</script>
